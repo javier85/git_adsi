@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Estilos para el formulario */
+      #formulario {
+        background-color: #b3c6e9;
+        padding: 1rem;
+        border-radius: 100px;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      label {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      
+      input {
+        padding: 0.5rem;
+        border-radius: 2px;
+        border: none;
+        margin-bottom: 1rem;
+      }
+      
+      input[type="submit"] {
+        background-color: #7934e7;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div id="formulario">
+      <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </body>
+</html>

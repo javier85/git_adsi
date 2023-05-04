@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: #f1d1f5;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+      
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #bbeff3;
+        box-shadow: 0 0 10px rgba(211, 199, 199, 0.3);
+      }
+      
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      label {
+        font-weight: bold;
+        color: #000000;
+      }
+      
+      input[type="text"], 
+      input[type="email"], 
+      input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #0646f8;
+        transition: border-color 8;
+      }
+      
+      input[type="text"]:focus, 
+      input[type="email"]:focus, 
+      input[type="tel"]:focus {
+        outline: none;
+      }
+      
+      .btn-primary {
+        display: block;
+        margin: 0 auto;
+        background-color: #c25ee0;
+        border-color: #000000;
+        transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>FORMULARIO</h2>
+      <form>
+        <div class="form-group">
+          <label for="nombre">NOMBRE:</label>
+          <input type="text" class="form-control" id="nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">GMAIL:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="telefono">TELÉFONO:</label>
+          <input type="tel" class="form-control" id="telefono">
+        </div>
+        <button type="submit" class="btn btn-primary">ENVIAR</button>
+      </form>
+    </div>
+  </body>
+</html>
+
